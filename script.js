@@ -22,7 +22,7 @@ function getMeal(meal) {
 //Changes the text on the webpage to the response the API gives to the console.
 	$.ajax(settings).done(function (response) {
 
-//The cards are initially hidden until the button is pressed.
+//These cards that hold the recipes are initially hidden until the button is pressed.
 	$(".card-body.hide").show()
 
 //If the following is absent, the ingredients list and image don't update properly if a new input is given by the search bar.
