@@ -1,0 +1,9 @@
+.card-body{
+	background-color: lightblue;
+}
+.card-body.hide {
+	display: none;
+}
+.card-body.show{
+	display: block;
+}
