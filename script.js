@@ -1,4 +1,4 @@
-//The search function that determines what the API looks for.
+//The search function that determines what the API looks for. This includes a recipe's name, ingredients, instructions, and an image of the finished product.
 $("#searchBtn").on("click", searchMeal);
 function searchMeal() {
     var meal = $("#searchTxt").val().trim();
