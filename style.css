@@ -1,5 +1,9 @@
+body {
+  font-family: Averta, sans-serif, sans-serif;
+}
+
 .card-body{
-	background-color: lightblue;
+	background-color: #3a34ed;
 }
 .card-body.hide {
 	display: none;
