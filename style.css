@@ -3,7 +3,7 @@ body {
 }
 
 .card-body{
-	background-color: #f98f16;
+	background-color: #edbd34;
 }
 .card-body.hide {
 	display: none;
