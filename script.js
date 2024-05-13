@@ -60,7 +60,7 @@ function getMeal(meal) {
 
 //Grabs images of the dishes from the API.
 	let img = $('<img id="image1">');
-	img.attr('src', "https://placehold.co/600x400");
+	img.attr('src', `https:${response.d[0].Image}`);
 	//The image from the API seemed to be incompatible with the page, potentially due to there being double slashes at the start, so we inserted a placeholder.
 	$('.card-body').prepend(img);
 	$("img").addClass("picture");
