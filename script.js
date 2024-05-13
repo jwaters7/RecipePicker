@@ -59,27 +59,46 @@ function getMeal(meal) {
 	$("#OptionFive").text(`Option 5: ${option5}`);
 
 //Grabs images of the dishes from the API.
-	let img = $('<img id="image1">');
-	img.attr('src', `https:${response.d[0].Image}`);
-	//The image from the API seemed to be incompatible with the page, potentially due to there being double slashes at the start, so we inserted a placeholder.
-	$('.card-body').prepend(img);
+	let img1 = $('<img id="image1">');
+	img1.attr('src', `https:${response.d[0].Image}`);
+	$('#MealOptions1').prepend(img1);
 	$("img").addClass("picture");
 
-//Places the image into the webpage.
+	let img2 = $('<img id="image2">');
+	img2.attr('src', `https:${response.d[1].Image}`);
+	$('#MealOptions2').prepend(img2);
+	$("img").addClass("picture");
+
+	let img3 = $('<img id="image3">');
+	img3.attr('src', `https:${response.d[2].Image}`);
+	$('#MealOptions3').prepend(img3);
+	$("img").addClass("picture");
+
+	let img4 = $('<img id="image4">');
+	img4.attr('src', `https:${response.d[3].Image}`);
+	$('#MealOptions4').prepend(img4);
+	$("img").addClass("picture");
+
+	let img5 = $('<img id="image5">');
+	img5.attr('src', `https:${response.d[4].Image}`);
+	$('#MealOptions5').prepend(img5);
+	$("img").addClass("picture");
+
+//Places the image into the console.
 	let firstImage = response.d[0].Image;
-	console.log(`Image 1: ${firstImage}`);
+	console.log(`Image 1: https:${firstImage}`);
 
 	let secondImage = response.d[1].Image;
-	console.log(`Image 2: ${firstImage}`);
+	console.log(`Image 2: https:${secondImage}`);
 
 	let thirdImage = response.d[2].Image;
-	console.log(`Image 3: ${firstImage}`);
+	console.log(`Image 3: https:${thirdImage}`);
 
 	let fourthImage = response.d[3].Image;
-	console.log(`Image 4: ${firstImage}`);
+	console.log(`Image 4: https:${fourthImage}`);
 
 	let fifthImage = response.d[4].Image;
-	console.log(`Image 5: ${firstImage}`);
+	console.log(`Image 5: https:${fifthImage}`);
 
 //Grabs the ingredients list from the API and inputs the ingredients into a list in the webpage.
     let ingredients1 = response.d[0].Ingredients;
