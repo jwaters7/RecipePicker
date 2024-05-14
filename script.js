@@ -1,5 +1,11 @@
 //The search function that determines what the API looks for. This includes a recipe's name, ingredients, instructions, and an image of the finished product.
 $("#searchBtn").on("click", searchMeal);
+var searchEnter = document.getElementById("searchTxt");
+searchEnter.addEventListener("keypress", function(event) {
+	if (event.key === "Enter") {
+		document.getElementById("searchBtn").click();
+	}
+});
 function searchMeal() {
     var meal = $("#searchTxt").val().trim();
     console.log(meal);
